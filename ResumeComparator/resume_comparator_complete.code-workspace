@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "resume_comparator_complete",
+			"path": ".."
+		},
+		{
+			"name": "resume_comparator_final_package",
+			"path": "../../resume_comparator_final_package"
+		}
+	],
+	"settings": {}
+}
