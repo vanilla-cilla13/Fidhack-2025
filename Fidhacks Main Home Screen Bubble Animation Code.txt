@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LevelUp: LinkedIn For Girls</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background-color: #ffeef2;
+      overflow: hidden;
+      position: relative;
+      height: 100vh;
+    }
+
+    .bubbles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background-color: rgba(255, 105, 180, 0.4); /* slightly darker pink */
+      animation: float linear infinite;
+    }
+
+    /* Generate 15 unique bubble styles */
+    .bubble:nth-child(1)  { width: 120px; height: 120px; left: 5%;  animation-duration: 22s; animation-delay: 0s; }
+    .bubble:nth-child(2)  { width: 80px;  height: 80px;  left: 15%; animation-duration: 30s; animation-delay: -5s; }
+    .bubble:nth-child(3)  { width: 150px; height: 150px; left: 25%; animation-duration: 35s; animation-delay: -10s; }
+    .bubble:nth-child(4)  { width: 100px; height: 100px; left: 35%; animation-duration: 28s; animation-delay: -3s; }
+    .bubble:nth-child(5)  { width: 90px;  height: 90px;  left: 45%; animation-duration: 26s; animation-delay: -7s; }
+    .bubble:nth-child(6)  { width: 60px;  height: 60px;  left: 55%; animation-duration: 24s; animation-delay: -4s; }
+    .bubble:nth-child(7)  { width: 110px; height: 110px; left: 65%; animation-duration: 31s; animation-delay: -6s; }
+    .bubble:nth-child(8)  { width: 130px; height: 130px; left: 75%; animation-duration: 29s; animation-delay: -8s; }
+    .bubble:nth-child(9)  { width: 95px;  height: 95px;  left: 85%; animation-duration: 27s; animation-delay: -5s; }
+    .bubble:nth-child(10) { width: 70px;  height: 70px;  left: 90%; animation-duration: 21s; animation-delay: -2s; }
+    .bubble:nth-child(11) { width: 100px; height: 100px; left: 10%; animation-duration: 33s; animation-delay: -1s; }
+    .bubble:nth-child(12) { width: 80px;  height: 80px;  left: 20%; animation-duration: 34s; animation-delay: -3s; }
+    .bubble:nth-child(13) { width: 140px; height: 140px; left: 30%; animation-duration: 32s; animation-delay: -6s; }
+    .bubble:nth-child(14) { width: 60px;  height: 60px;  left: 50%; animation-duration: 25s; animation-delay: -9s; }
+    .bubble:nth-child(15) { width: 120px; height: 120px; left: 70%; animation-duration: 30s; animation-delay: -4s; }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateY(-200px) scale(1.2);
+        opacity: 0.1;
+      }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: 15%;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: normal;
+      margin-bottom: 2rem;
+    }
+
+    .nav {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      z-index: 2;
+    }
+
+    .nav a {
+      margin-left: 20px;
+      color: #222;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .buttons button {
+      background-color: #cce7ff;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #addcff;
+    }
+  </style>
+</head>
+<body>
+  <div class="bubbles">
+    <!-- 15 bubbles for denser background -->
+    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+  </div>
+
+  <div class="nav">
+    <a href="#">about</a>
+    <a href="#">connect</a>
+    <a href="#">find jobs</a>
+    <a href="#">log in</a>
+  </div>
+
+  <div class="container">
+    <h1>LevelUp: LinkedIn For Girls</h1>
+    <h2>Let’s Build Your Confidence</h2>
+    <div class="buttons">
+      <button>log in</button>
+      <button>sign up</button>
+    </div>
+  </div>
+</body>
+</html>
