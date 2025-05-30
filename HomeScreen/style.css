@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Inknut Antiqua');
+
+body {
+    background-color: #FFF6F9;
+    font-family: 'Inknut Antiqua';
+    color: #631590;
+    text-align: center;
+}
+
+.avatar {
+    background-color: #CDB4DB;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    position: relative;
+}
+
+.avatar-inner {
+    background-color: #FFC8DD;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.avatar-inner::before {
+    content: ":)";
+    font-size: 40px;
+    color: #631590;
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    rotate: 90deg;
+}
+
+.confidence {
+    color: #D23E74;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center; /* Align items in center vertically */
+    justify-content: center; /* Center everything */
+    gap: 15px; /* Space between items */
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack the box and button vertically */
+    align-items: center; /* Center items */
+}
+
+.box-title {
+    text-align: center;
+    font-size: 24px;
+    color: #631590;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.box {
+    background-color: rgba(255, 200, 221, 0.6);
+    color: #000000;
+    text-align: left;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 10px;
+    width: 400px;
+    height: 180px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between buttons */
+}
+
+.button {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 21px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.find-jobs {
+    background-color: #BDE0FE;
+    color: #01335E;
+}
+
+.networking {
+    background-color: #A8DADC;
+    color: #204E4F;
+}
